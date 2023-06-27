@@ -70,7 +70,7 @@ export const data = {
     {
       name: "SMK AN-NAHL",
       major: "Computer and network engineering",
-      graduation: "4 Mei 2014 - 24 Aug 2017",
+      graduation: "Mei 2014 - Aug 2017",
     },
   ],
   programmingStack: [
