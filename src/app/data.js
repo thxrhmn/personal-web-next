@@ -14,11 +14,45 @@ export const data = {
   projects: [
     {
       name: "Dumbflix",
+      desc: "",
       process: "3 Weeks",
+      linkGH: "https://github.com/thxrhmn/dumbflix",
+      linkProd: "https://dumbflix.thxrhmn.me",
+      stacks: [
+        {name: "React"},
+        {name: "Tailwind"},
+        {name: "Golang"},
+        {name: "PostgreSQL"},
+      ],
+      features: [
+        {name: "Cloudinary"},
+        {name: "Midtrans"},
+      ],
+      deployments: [
+        {name: "Vercel"},
+        {name: "Railwa"},
+      ]
     },
     {
       name: "Holyways",
+      desc: "",
       process: "1 Week",
+      linkGH: "https://github.com/thxrhmn/holyways",
+      linkProd: "https://holyways.thxrhmn.me",
+      stacks: [
+        {name: "React"},
+        {name: "Tailwind"},
+        {name: "Golang"},
+        {name: "PostgreSQL"},
+      ],
+      features: [
+        {name: "Cloudinary"},
+        {name: "Midtrans"},
+      ],
+      deployments: [
+        {name: "Vercel"},
+        {name: "Railwa"},
+      ]
     },
   ],
   educations: [
