@@ -1,84 +1,61 @@
 import Image from "next/image";
+import { data } from "./data";
 
 export default function Home() {
   return (
     <main className="md:w-[500px] mx-auto font-mono">
-
       <div className="header my-8 mx-5 flex flex-col">
         <div className="flex justify-center mb-3">
           <Image
             className="rounded-full"
-            src="/img.jpg"
+            src={`/${data.avatar}`}
             alt="Avatar Logo"
             width={50}
             height={50}
           />
         </div>
         <div className="">
-          <h1 className=" text-center">Hi there, I&apos;m Rahman Muhaemin</h1>
-          <p className=" text-center">I&apos;m Fullstack Developer</p>
+          <h1 className=" text-center">{data.header.text}</h1>
+          <p className=" text-center">{data.header.text2}</p>
         </div>
       </div>
 
       <div className="my-8 mx-5">
-        <p className="desc">
-          an enthusiastic Full Stack Developer. I have just completed a coding
-          bootcamp and I&apos;m ready to kickstart my career in the tech world.
-        </p>
-        <p className="desc mt-5">
-          I have a strong interest in technology and love to explore new things.
-          I possess skills in both front-end and back-end development, including
-          HTML, CSS, JavaScript, React, Node.js, Golang, MySQL and PostgreSQL. I
-          enjoy continuous learning and keeping up with industry advancements.
-        </p>
+        <p className="desc">{data.desc.text1}</p>
+        <p className="desc mt-5">{data.desc.text2}</p>
       </div>
 
       <div className="my-8 mx-5">
         <h2 className=" font-bold text-center">My Projects</h2>
         <div className="flex text-center">
-          <div className="projects w-[45%]">
-            <p className="">3 Weeks</p>
-            <p className="">Dumbflix</p>
-          </div>
-          <div className="projects w-[45%]">
-            <p className="">1 Week</p>
-            <p className="">Holyways</p>
-          </div>
+          {data.projects.map((item) => (
+            <div key={item.name} className="projects w-[45%]">
+              <p className="">{item.process}</p>
+              <p className="">{item.name}</p>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Educations</h2>
-        <div className="text-center md:flex md:justify-between md:text-center">
-          <div className="education md:w-[45%]">
-            <p className="">Feb 2023 - Apr 2023</p>
-            <p className="">Fullstack Developer</p>
-          </div>
-          <div className="education mt-3 md:mt-0 md:w-[45%]">
-            <p className="">Mei 2014 - Mei 2017</p>
-            <p className="">Computer and network engineering</p>
-          </div>
+        <div className="text-center items-center md:flex md:justify-between md:text-center">
+          {data.educations.map((item) => (
+            <div key={item.name} className="education mb-3 md:w-[45%]">
+              <p className="">{item.graduation}</p>
+              <p className="">{item.name}</p>
+              <p className="">{item.major}</p>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Programming Stacks</h2>
         <ul className="flex flex-wrap gap-x-6 justify-center">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Saas</li>
-          <li>Tailwind CSS</li>
-          <li>Bootstrap</li>
-          <li>Javascript</li>
-          <li>NodeJS</li>
-          <li>Golang</li>
-          <li>React</li>
-          <li>React Native</li>
-          <li>MySQL</li>
-          <li>PostgreSQL</li>
-          <li>MongoDB</li>
-          <li>Git</li>
-          <li>Linux</li>
+          {data.programmingStack.map((item) => (
+            <li key={item.name}>{item.name}</li>
+          ))}
         </ul>
       </div>
     </main>
