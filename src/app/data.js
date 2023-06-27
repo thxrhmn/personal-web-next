@@ -68,7 +68,7 @@ export const data = {
       graduation: "Feb 2023 - Apr 2023",
     },
     {
-      name: "Vocationaal High School AN-NAHL",
+      name: "Vocational High School An-nahl",
       major: "Computer and network engineering",
       graduation: "Mei 2014 - Aug 2017",
     },
