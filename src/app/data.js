@@ -20,8 +20,8 @@ export const data = {
   projects: [
     {
       name: "Dumbflix",
-      desc: "",
-      process: "3 Weeks",
+      desc: "The innovative web project that has just been created offers an engaging entertainment experience similar to Netflix. This platform is designed to provide users with ease of access to various entertainment content across internet-connected devices.",
+      process: "March 2023 - April 2023",
       linkGH: "https://github.com/thxrhmn/dumbflix",
       linkProd: "https://dumbflix.thxrhmn.me",
       stacks: [
@@ -41,8 +41,8 @@ export const data = {
     },
     {
       name: "Holyways",
-      desc: "",
-      process: "1 Week",
+      desc: "This project offers a crowdfunding and donation platform similar to Kitabisa.com. The platform aims to empower individuals, groups, and organizations to easily raise funds and garner support for various social, humanitarian, creative, or personal initiatives.",
+      process: "21 May 2023 - 28 May 2023",
       linkGH: "https://github.com/thxrhmn/holyways",
       linkProd: "https://holyways.thxrhmn.me",
       stacks: [
