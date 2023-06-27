@@ -7,7 +7,7 @@ export default function Contact() {
       <Nav />
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Contacts</h2>
-        <ul className="text-center">
+        <ul className="text-center contacts">
           <li><a href={`mailto:${data.contacts.email}`}>Email</a></li>
           <li><a href={data.contacts.linkedin}>Linkedin</a></li>
           <li><a href={data.contacts.github}>Github</a></li>
