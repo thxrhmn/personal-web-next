@@ -7,9 +7,9 @@ export default function Project() {
       <Nav />
       <div className="my-8 mx-5">
         <h2 className="font-bold text-center">My Projects</h2>
-        <div className="flex text-center">
+        <div className="">
           {data.projects.map((item) => (
-            <div key={item.name} className="projects w-[45%]">
+            <div key={item.name} className="projects mb-4 w-[45%]">
               <p className="">{item.process}</p>
               <a href={item.linkGH} className="">
                 {item.name}
