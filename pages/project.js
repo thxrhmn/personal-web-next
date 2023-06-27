@@ -17,7 +17,7 @@ export default function Project() {
                 <time className="mb-1 text-sm font-normal leading-none italic">
                   {item.process}
                 </time>
-                <h3 className="text-lg">{item.name}</h3>
+                <h3 className="project-name">{item.name}</h3>
                 <p className="mb-4 text-base font-normal">{item.desc}</p>
                 <div className="flex">
                   <h5 className="text-sm">stacks:</h5>

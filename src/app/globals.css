@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.project-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .project-stacks > li {
   padding-right: 10px;
 }
