@@ -21,9 +21,9 @@ export default function Project() {
                 <p className="mb-4 text-base font-normal">{item.desc}</p>
                 <div className="flex">
                   <h5 className="text-sm">stacks:</h5>
-                  <ul className="flex text-sm">
+                  <ul className="flex text-sm project-stacks">
                     {item.stacks.map((item, idx) => (
-                      <li className="px-2 underline" key={idx}>
+                      <li className="underline" key={idx}>
                         {item.name}
                       </li>
                     ))}
@@ -32,7 +32,7 @@ export default function Project() {
                 <div className="flex">
                   <Link href={item.linkGH}>
                     <Image
-                      className="rounded-full"
+                      className="rounded-full project-stacks-link"
                       src="/github.svg"
                       alt="Github Logo"
                       width={15}
@@ -41,7 +41,7 @@ export default function Project() {
                   </Link>
                   <Link href={item.linkProd}>
                     <Image
-                      className="rounded-full"
+                      className="rounded-full project-stacks-link"
                       src="/network.svg"
                       alt="Network Logo"
                       width={15}
@@ -54,19 +54,6 @@ export default function Project() {
           </ol>
         </div>
       </div>
-      {/* <div className="my-8 mx-5">
-        <h2 className="font-bold text-center">My Projects</h2>
-        <div className="">
-          {data.projects.map((item) => (
-            <div key={item.name} className="projects mb-4 w-[45%]">
-              <p className="">{item.process}</p>
-              <a href={item.linkGH} className="">
-                {item.name}
-              </a>
-            </div>
-          ))}
-        </div>
-      </div> */}
     </main>
   );
 }
