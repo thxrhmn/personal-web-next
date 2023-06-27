@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="my-8 mx-5 opacity-80">
+    <div className="my-8 mx-5 opacity-90">
       <ul className="flex justify-evenly gap-x-2">
         <li>
           <Link href="/">About</Link>
