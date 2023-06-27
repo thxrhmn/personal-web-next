@@ -15,7 +15,7 @@ export const data = {
     text1:
       "an enthusiastic Full Stack Developer. I have just completed a coding bootcamp and I'm ready to kickstart my career in the tech world.",
     text2:
-      "I have a strong interest in technology and love to explore new things. I possess skills in both front-end and back-end development, including HTML, CSS, JavaScript, React, Node.js, Golang, MySQL and PostgreSQL. Ienjoy continuous learning and keeping up with industry advancements.",
+      "I have a strong interest in technology and love to explore new things. I possess skills in both front-end and back-end development, including HTML, CSS, JavaScript, React, Node.js, Golang, MySQL and PostgreSQL. I enjoy continuous learning and keeping up with industry advancements.",
   },
   projects: [
     {
