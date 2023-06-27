@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex justify-center mb-3">
           <Image
             className="rounded-full"
-            src="/avatar.svg"
+            src="/img.jpg"
             alt="Avatar Logo"
             width={50}
             height={50}
@@ -35,12 +35,12 @@ export default function Home() {
 
       <div className="my-8 mx-5">
         <h2 className=" font-bold text-center">My Projects</h2>
-        <div className="md:flex md:justify-between md:text-center">
-          <div className="projects md:w-[45%]">
+        <div className="flex text-center">
+          <div className="projects w-[45%]">
             <p className="">3 Weeks</p>
             <p className="">Dumbflix</p>
           </div>
-          <div className="projects mt-3 md:mt-0 md:w-[45%]">
+          <div className="projects w-[45%]">
             <p className="">1 Week</p>
             <p className="">Holyways</p>
           </div>
@@ -49,7 +49,7 @@ export default function Home() {
 
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Educations</h2>
-        <div className="md:flex md:justify-between md:text-center">
+        <div className="text-center md:flex md:justify-between md:text-center">
           <div className="education md:w-[45%]">
             <p className="">Feb 2023 - Apr 2023</p>
             <p className="">Fullstack Developer</p>
