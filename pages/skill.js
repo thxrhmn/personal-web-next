@@ -7,7 +7,7 @@ export default function Skill() {
       <Nav />
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Programming Skill</h2>
-        <ul className="flex flex-wrap gap-x-6 justify-center">
+        <ul className="text-center">
           {data.programmingStack.map((item) => (
             <li key={item.name}>{item.name}</li>
           ))}
