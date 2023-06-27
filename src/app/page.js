@@ -1,9 +1,10 @@
-import Image from"next/image";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="md:w-[500px] mx-auto font-mono">
-      <div className="header m-5 flex flex-col">
+
+      <div className="header my-8 mx-5 flex flex-col">
         <div className="flex justify-center mb-3">
           <Image
             className="rounded-full"
@@ -14,19 +15,17 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <h1 className=" text-center">
-            Hi there, I&apos;m Rahman Muhaemin
-          </h1>
+          <h1 className=" text-center">Hi there, I&apos;m Rahman Muhaemin</h1>
           <p className=" text-center">I&apos;m Fullstack Developer</p>
         </div>
       </div>
 
-      <div className="m-5">
+      <div className="my-8 mx-5">
         <p className="desc">
           an enthusiastic Full Stack Developer. I have just completed a coding
           bootcamp and I&apos;m ready to kickstart my career in the tech world.
         </p>
-        <p className="desc  mt-5">
+        <p className="desc mt-5">
           I have a strong interest in technology and love to explore new things.
           I possess skills in both front-end and back-end development, including
           HTML, CSS, JavaScript, React, Node.js, Golang, MySQL and PostgreSQL. I
@@ -34,7 +33,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="m-5">
+      <div className="my-8 mx-5">
         <h2 className=" font-bold text-center">My Projects</h2>
         <div className="md:flex md:justify-between md:text-center">
           <div className="projects md:w-[45%]">
@@ -48,7 +47,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="m-5">
+      <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Education</h2>
         <div className="md:flex md:justify-between md:text-center">
           <div className="education md:w-[45%]">
@@ -62,7 +61,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="m-5">
+      <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Programming Stack</h2>
         <ul className="flex flex-wrap gap-x-6 justify-center">
           <li>HTML</li>
