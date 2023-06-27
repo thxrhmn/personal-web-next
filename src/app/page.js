@@ -31,17 +31,23 @@ export default function Home() {
 
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Educations</h2>
-        <div className="text-center items-center md:flex md:justify-between md:text-center">
-          {data.educations.map((item) => (
-            <div key={item.name} className="education mb-3 md:w-[45%]">
-              <p className="">{item.graduation}</p>
-              <p className="">{item.name}</p>
-              <p className="">{item.major}</p>
-            </div>
-          ))}
-        </div>
+        <ol className="relative border-l border-gray-200 dark:border-gray-700">
+        {data.educations.map((item, idx) => (
+          <li key={idx} className="mb-10 ml-4">
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:bg-black"></div>
+            <time className="mb-1 text-sm font-normal leading-none">
+              {item.graduation}
+            </time>
+            <h3 className="text-md italic">{item.name}</h3>
+            <p className="mb-4 text-base font-normal">
+              {item.major}
+            </p>
+          </li>
+        ))}
+      </ol>
       </div>
 
+      
     </main>
   );
 }
