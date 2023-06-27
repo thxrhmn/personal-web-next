@@ -5,11 +5,17 @@ export const data = {
     text: "Hi there, I'm Rahman Muhaemin",
     text2: "I'm Fullstack Developer",
   },
+  contacts: {
+    email: "rahmanmuhaemin@gmail.com",
+    linkedin: "https://linkedin.com/in/rahman-muhaemin",
+    github: "https://github.com/thxrhmn",
+    website: "https://thxrhmn.me"
+  },
   desc: {
     text1:
       "an enthusiastic Full Stack Developer. I have just completed a coding bootcamp and I'm ready to kickstart my career in the tech world.",
     text2:
-      "I have a strong interest in technology and love to explore new things.I possess skills in both front-end and back-end development, including HTML, CSS, JavaScript, React, Node.js, Golang, MySQL and PostgreSQL. Ienjoy continuous learning and keeping up with industry advancements.",
+      "I have a strong interest in technology and love to explore new things. I possess skills in both front-end and back-end development, including HTML, CSS, JavaScript, React, Node.js, Golang, MySQL and PostgreSQL. Ienjoy continuous learning and keeping up with industry advancements.",
   },
   projects: [
     {

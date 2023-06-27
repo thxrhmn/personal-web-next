@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { data } from "./data";
+import Link from "next/link";
+import Nav from "./components/nav";
 
 export default function Home() {
   return (
@@ -20,21 +22,11 @@ export default function Home() {
         </div>
       </div>
 
+      <Nav />
+
       <div className="my-8 mx-5">
         <p className="desc">{data.desc.text1}</p>
         <p className="desc mt-5">{data.desc.text2}</p>
-      </div>
-
-      <div className="my-8 mx-5">
-        <h2 className="font-bold text-center">My Projects</h2>
-        <div className="flex text-center">
-          {data.projects.map((item) => (
-            <div key={item.name} className="projects w-[45%]">
-              <p className="">{item.process}</p>
-              <a href={item.linkGH} className="">{item.name}</a>
-            </div>
-          ))}
-        </div>
       </div>
 
       <div className="my-8 mx-5">
@@ -50,14 +42,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="my-8 mx-5">
-        <h2 className="text-center mb-4 font-bold">Programming Stacks</h2>
-        <ul className="flex flex-wrap gap-x-6 justify-center">
-          {data.programmingStack.map((item) => (
-            <li key={item.name}>{item.name}</li>
-          ))}
-        </ul>
-      </div>
     </main>
   );
 }
