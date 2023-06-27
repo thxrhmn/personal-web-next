@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { data } from "./data";
-import Link from "next/link";
 import Nav from "./components/nav";
 
 export default function Home() {
@@ -32,22 +31,18 @@ export default function Home() {
       <div className="my-8 mx-5">
         <h2 className="text-center mb-4 font-bold">Educations</h2>
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
-        {data.educations.map((item, idx) => (
-          <li key={idx} className="mb-10 ml-4">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:bg-black"></div>
-            <time className="mb-1 text-sm font-normal leading-none">
-              {item.graduation}
-            </time>
-            <h3 className="text-md italic">{item.name}</h3>
-            <p className="mb-4 text-base font-normal">
-              {item.major}
-            </p>
-          </li>
-        ))}
-      </ol>
+          {data.educations.map((item, idx) => (
+            <li key={idx} className="mb-10 ml-4">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-black dark:bg-black"></div>
+              <time className="mb-1 text-sm font-normal leading-none italic">
+                {item.graduation}
+              </time>
+              <h3 className="text-md">{item.name}</h3>
+              <p className="mb-4 text-base font-normal">{item.major}</p>
+            </li>
+          ))}
+        </ol>
       </div>
-
-      
     </main>
   );
 }
