@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.desc {
-  text-align: justify;
-  text-justify: inter-character;
-}

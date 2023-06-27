@@ -15,8 +15,8 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <h1 className=" text-center">{data.header.text}</h1>
-          <p className=" text-center">{data.header.text2}</p>
+          <h1 className="text-center">{data.header.text}</h1>
+          <p className="text-center">{data.header.text2}</p>
         </div>
       </div>
 
@@ -26,12 +26,12 @@ export default function Home() {
       </div>
 
       <div className="my-8 mx-5">
-        <h2 className=" font-bold text-center">My Projects</h2>
+        <h2 className="font-bold text-center">My Projects</h2>
         <div className="flex text-center">
           {data.projects.map((item) => (
             <div key={item.name} className="projects w-[45%]">
               <p className="">{item.process}</p>
-              <p className="">{item.name}</p>
+              <a href={item.linkGH} className="">{item.name}</a>
             </div>
           ))}
         </div>
