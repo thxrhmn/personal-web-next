@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       <div className="my-8 mx-5">
-        <h2 className="text-center mb-4 font-bold">Education</h2>
+        <h2 className="text-center mb-4 font-bold">Educations</h2>
         <div className="md:flex md:justify-between md:text-center">
           <div className="education md:w-[45%]">
             <p className="">Feb 2023 - Apr 2023</p>
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className="my-8 mx-5">
-        <h2 className="text-center mb-4 font-bold">Programming Stack</h2>
+        <h2 className="text-center mb-4 font-bold">Programming Stacks</h2>
         <ul className="flex flex-wrap gap-x-6 justify-center">
           <li>HTML</li>
           <li>CSS</li>
