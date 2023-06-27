@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.project-stacks > li {
+  padding-right: 10px;
+}
+
+.project-stacks-link {
+  margin: 10px 10px 0 0;
+}
+
+.programming-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 8px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 0 8px;
+} 
