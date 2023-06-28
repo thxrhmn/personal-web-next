@@ -23,7 +23,5 @@
 }
 
 .contacts {
-  display: flex;
-  justify-content: center;
   gap: 0 8px;
 } 
