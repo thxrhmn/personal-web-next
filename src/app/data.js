@@ -9,7 +9,8 @@ export const data = {
     email: "rahmanmuhaemin@gmail.com",
     linkedin: "https://linkedin.com/in/rahman-muhaemin",
     github: "https://github.com/thxrhmn",
-    website: "https://thxrhmn.me"
+    website: "https://thxrhmn.me",
+    telegram: "https://thxrhmn.t.me"
   },
   desc: {
     text1:
