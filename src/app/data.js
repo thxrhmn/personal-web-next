@@ -77,8 +77,8 @@ export const data = {
   programmingStack: [
     { name: "HTML" },
     { name: "CSS" },
-    { name: "Saas" },
-    { name: "Tailwind CSS" },
+    { name: "Sass" },
+    { name: "Tailwind" },
     { name: "Bootstrap" },
     { name: "Javascript" },
     { name: "NodeJS" },

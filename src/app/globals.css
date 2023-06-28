@@ -25,3 +25,7 @@
 .contacts {
   gap: 0 8px;
 } 
+
+.programming-skills .skill-star {
+  padding-left:5px;
+}
