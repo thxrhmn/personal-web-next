@@ -30,7 +30,7 @@ export default function Contact() {
                 width={17}
                 height={17}
               />
-              <span>{data.contacts.linkedin}</span>
+              <span>@rahman-muhaemin</span>
             </a>
           </li>
           <li>
