@@ -3,6 +3,9 @@ import Router from "next/router"
 import { useState, useEffect } from "react"
 import Loading from "@/app/loading"
 
+import { JetBrains_Mono } from "next/font/google"
+const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'] })
+
 export default function MyApp({ Component, pageProps}){
   const [isLoading, setIsLoading] = useState(false)
 
@@ -22,9 +25,9 @@ export default function MyApp({ Component, pageProps}){
   }, [Router])
 
   return (
-    <>
+    <div className={jetBrainsMono.className}>
       {isLoading && <Loading/>}
       <Component {...pageProps} />
-    </>
+    </div>
   )
 }

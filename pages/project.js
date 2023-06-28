@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Project() {
   return (
-    <main className="md:w-[500px] mx-auto font-mono">
+    <main className="md:w-[500px] mx-auto">
       <Nav />
       <div className="my-8 mx-5">
         <h2 className="font-bold text-center mb-4">My Projects</h2>

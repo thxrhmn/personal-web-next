@@ -1,7 +1,9 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'Thxrhmn Portfolio Web',
@@ -11,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={jetBrainsMono.className}>{children}</body>
     </html>
   )
 }

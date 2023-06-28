@@ -4,7 +4,7 @@ import Nav from "./components/nav";
 
 export default function Home() {
   return (
-    <main className="md:w-[500px] mx-auto font-mono">
+    <main className="md:w-[500px] mx-auto">
       <div className="header my-8 mx-5 flex flex-col">
         <div className="flex justify-center mb-3">
           <Image
